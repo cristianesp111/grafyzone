@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRAFYZONE // Streetwear Urbano & Anime Drops 2026</title>
+  <meta name="description"
+    content="Grafyzone - Remeras pesadas oversize 100% algodón 24/1 con diseños únicos inspirados en el streetwear urbano, cultura anime underground y estética Neo-Tokyo.">
+
+  <!-- Favicon / SVG Icon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Core & Editor Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/editor.css">
+</head>
+
+<body>
+
+  <!-- Top Announcement Ticker -->
+  <aside class="announcement-bar" id="announcement-bar" aria-label="Avisos destacados">
+    <div class="container">
+      <span id="announcement-text">⚡ DROP #01 ANIME STREETWEAR 2026 // ENVÍOS GRATIS EN COMPRAS MAYORES A $60.000 //
+        PIEZAS LIMITADAS</span>
+    </div>
+  </aside>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="#hero-section" class="brand-logo" aria-label="Grafyzone Inicio">
+        <span class="logo-glitch">GRAFY<span>ZONE</span></span>
+        <span class="brand-badge">ANIME DROP 2026</span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="#products-section">Drops</a></li>
+          <li><a href="#quality-section">Calidad</a></li>
+          <li><a href="#lookbook-section">Lookbook</a></li>
+          <li><a href="#size-guide-section">Talles</a></li>
+          <li><a href="#site-footer">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="cart-toggle-btn" id="header-cart-btn" aria-label="Abrir Carrito de compras">
+          <span>🛒 CARRITO</span>
+          <span class="cart-badge" id="cart-count-badge" style="display: none;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Banner Section -->
+    <section class="hero-section" id="hero-section">
+      <div class="hero-bg-wrapper">
+        <img src="assets/images/hero-banner.jpg" alt="Grafyzone Streetwear Model" class="hero-bg-img" id="hero-bg-img"
+          loading="eager" fetchpriority="high">
+        <div class="hero-gradient-overlay"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="badge-tag" id="hero-badge">ANIME STREETWEAR // DROP 2026 // EDICIÓN 01</div>
+          <h1 class="hero-title text-gradient" id="hero-title" data-live-edit="hero.title">DISEÑOS ÚNICOS QUE NO EXISTEN
+            EN OTRO LADO</h1>
+          <p class="hero-subtitle" id="hero-subtitle" data-live-edit="hero.subtitle">
+            Remeras pesadas de corte Boxy & Oversize 100% algodón peinado 24/1. Gráficas inspiradas en anime de culto,
+            mecha, estética Neo-Tokyo y gráfica underground con serigrafía táctil de alta densidad.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#products-section" class="btn btn-primary" id="hero-btn-primary">EXPLORAR DROPS</a>
+            <a href="#lookbook-section" class="btn btn-secondary" id="hero-btn-secondary">VER LOOKBOOK</a>
+          </div>
+
+          <div class="hero-stats" id="hero-stats-container">
+            <!-- Rendered from store data -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Catalog Section -->
+    <section class="products-section" id="products-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="badge-tag">CATÁLOGO EXCLUSIVO</span>
+          <h2>COLECCIONES & DROPS ACTIVOS</h2>
+          <p>Tiradas limitadas numeradas. Cada prenda cuenta con vista interactiva frente y dorso con selector de talle
+            y zoom de alta definición.</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <nav class="filter-bar" id="filter-bar" aria-label="Filtrar por colección">
+          <!-- Rendered dynamically -->
+        </nav>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="products-grid">
+          <!-- Rendered dynamically by products.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Quality & Craftsmanship Section -->
+    <section class="quality-section" id="quality-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="badge-tag secondary" id="quality-badge">CALIDAD GRAFYZONE</span>
+          <h2 id="quality-title" data-live-edit="quality.title">CONSTRUIDAS PARA DURAR EN LAS CALLES</h2>
+          <p id="quality-subtitle" data-live-edit="quality.subtitle">
+            No hacemos remeras promocionales estándar. Diseñamos indumentaria pesada con los más altos estándares
+            textiles y serigráficos del streetwear internacional.
+          </p>
+        </div>
+
+        <div class="quality-grid" id="quality-grid">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Lookbook Section -->
+    <section class="lookbook-section" id="lookbook-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="badge-tag" id="lookbook-badge">EDITORIAL // LOOKBOOK</span>
+          <h2 id="lookbook-title" data-live-edit="lookbook.title">GRAFYZONE EN LAS CALLES</h2>
+          <p id="lookbook-subtitle" data-live-edit="lookbook.subtitle">
+            Tomas nocturnas y sesiones de nuestra comunidad vistiendo las piezas de los primeros drops.
+          </p>
+        </div>
+
+        <div class="lookbook-grid" id="lookbook-grid">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Size Guide Section -->
+    <section class="size-guide-section" id="size-guide-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="badge-tag warning" id="sizes-badge">TABLA DE MEDIDAS</span>
+          <h2 id="sizes-title" data-live-edit="sizesGuide.title">ENCUENTRA TU FIT PERFECTO</h2>
+          <p id="sizes-subtitle" data-live-edit="sizesGuide.subtitle">
+            Nuestras remeras son de corte Boxy Oversize. Si prefieres un calce más tradicional, pide un talle menos.
+          </p>
+        </div>
+
+        <div class="size-guide-container">
+          <div class="table-responsive">
+            <table class="size-table">
+              <thead>
+                <tr>
+                  <th>TALLE</th>
+                  <th>ANCHO DE PECHO</th>
+                  <th>LARGO TOTAL</th>
+                  <th>MANGA / HOMBRO</th>
+                </tr>
+              </thead>
+              <tbody id="sizes-table-body">
+                <!-- Rendered dynamically -->
+              </tbody>
+            </table>
+          </div>
+
+          <div class="care-tips-box">
+            <h3>⚡ Cuidado de tu prenda</h3>
+            <ul class="care-tips-list" id="care-tips-list">
+              <!-- Rendered dynamically -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <h4 id="footer-brand-name">GRAFYZONE</h4>
+          <span class="badge-tag">STREETWEAR INDEPENDIENTE</span>
+          <p id="footer-about-text">
+            Grafyzone es un laboratorio de indumentaria streetwear independiente. Diseños únicos, estética cyberpunk e
+            impronta nocturna con la máxima calidad textil.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>NAVEGACIÓN</h4>
+          <ul class="footer-links">
+            <li><a href="#hero-section">Inicio</a></li>
+            <li><a href="#products-section">Drops Exclusivos</a></li>
+            <li><a href="#quality-section">Estándar de Calidad</a></li>
+            <li><a href="#lookbook-section">Lookbook</a></li>
+            <li><a href="#size-guide-section">Guía de Talles</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>COMUNIDAD</h4>
+          <ul class="footer-links">
+            <li><a href="https://instagram.com" target="_blank" rel="noopener" id="footer-ig-link">@grafyzone.wear</a>
+            </li>
+            <li><a href="https://tiktok.com" target="_blank" rel="noopener">TikTok @grafyzone</a></li>
+            <li><a href="#" onclick="CartManager.openDrawer(); return false;">Ver Carrito</a></li>
+            <li><a href="#" onclick="SectionEditor.toggleEditMode(); return false;">⚙️ Modo Editor</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>UBICACIÓN & ENVÍOS</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 12px;" id="footer-address">
+            Buenos Aires, Argentina.<br>Envíos seguros a todo el país.
+          </p>
+          <div style="font-size: 0.78rem; font-family: var(--font-tech); color: var(--accent-primary);">
+            MERCADO PAGO // TRANSFERENCIA // TARJETAS
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div id="footer-copyright">© 2026 GRAFYZONE. Todos los derechos reservados. Diseñado para rebeldes nocturnos.
+        </div>
+        <div style="font-family: var(--font-tech); font-size: 0.76rem; color: var(--text-muted);">
+          MADE WITH CYBERPASSION // LIMITED DROPS ONLY
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Modals, Drawers & Lightboxes
+       ========================================================================== -->
+
+  <!-- Shopping Cart Slide-over Drawer -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay">
+    <aside class="cart-drawer" aria-label="Carrito de compras">
+      <div class="cart-header">
+        <h3>🛒 TU CARRITO</h3>
+        <button type="button" class="cart-close-btn" id="cart-close-btn" aria-label="Cerrar carrito">&times;</button>
+      </div>
+
+      <!-- Free Shipping Meter -->
+      <div class="shipping-meter">
+        <div class="shipping-meter-text" id="shipping-meter-status">
+          <span>Calculando envío...</span>
+        </div>
+        <div class="shipping-bar-track">
+          <div class="shipping-bar-fill" id="shipping-bar-fill"></div>
+        </div>
+      </div>
+
+      <!-- Items List -->
+      <div class="cart-items-container" id="cart-items-container">
+        <!-- Rendered dynamically by cart.js -->
+      </div>
+
+      <!-- Cart Footer & Actions -->
+      <div class="cart-footer">
+        <div class="cart-summary-row">
+          <span>Subtotal de prendas:</span>
+          <span id="cart-subtotal-val">$0</span>
+        </div>
+        <div class="cart-summary-row total-row">
+          <span>TOTAL ESTIMADO:</span>
+          <span id="cart-total-val" style="color: var(--accent-primary);">$0</span>
+        </div>
+
+        <div class="cart-actions" id="cart-actions-box">
+          <button type="button" class="btn btn-whatsapp" id="btn-checkout-whatsapp">
+            <span>💬 PEDIR DIRECTO POR WHATSAPP</span>
+          </button>
+          <button type="button" class="btn btn-primary" id="btn-open-checkout-modal">
+            <span>💳 PAGAR CON MERCADO PAGO / TARJETA</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- HD Zoom Lightbox Dialog -->
+  <dialog class="modal-dialog" id="zoom-dialog" aria-labelledby="zoom-product-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="zoom-product-title" style="font-size: 1.1rem; color: var(--accent-primary);">INSPECCIÓN EN ALTA
+          DEFINICIÓN</h3>
+        <button type="button" class="modal-close-btn" aria-label="Cerrar zoom">&times;</button>
+      </div>
+      <div class="zoom-modal-body">
+        <div class="zoom-image-wrapper">
+          <img src="" alt="Zoom de prenda" class="zoom-image">
+        </div>
+        <div class="zoom-caption">Haz click en la prenda para activar zoom 2x</div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Checkout / Simulated Payment Dialog -->
+  <dialog class="modal-dialog" id="checkout-dialog" aria-labelledby="checkout-title">
+    <div class="modal-card" style="max-width: 640px;">
+      <div class="modal-header">
+        <h3 id="checkout-title" style="font-size: 1.15rem; color: var(--accent-primary);">FINALIZAR PEDIDO // GRAFYZONE
+        </h3>
+        <button type="button" class="modal-close-btn" aria-label="Cerrar">&times;</button>
+      </div>
+      <div class="checkout-modal-body">
+        <form id="checkout-form">
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 20px;">
+            Elige tu método de pago preferido para completar la orden:
+          </p>
+
+          <div class="payment-method-selector">
+            <div class="payment-option-card selected" data-method="mercadopago">
+              <div class="icon">💙</div>
+              <div class="label">MERCADO PAGO</div>
+              <small style="color: var(--text-muted); font-size: 0.7rem;">Dinero en cuenta o QR</small>
+            </div>
+            <div class="payment-option-card" data-method="transferencia">
+              <div class="icon">🏦</div>
+              <div class="label">TRANSFERENCIA</div>
+              <small style="color: var(--accent-green); font-size: 0.7rem; font-weight: 700;">15% DE DESCUENTO</small>
+            </div>
+            <div class="payment-option-card" data-method="tarjeta">
+              <div class="icon">💳</div>
+              <div class="label">TARJETA</div>
+              <small style="color: var(--text-muted); font-size: 0.7rem;">3 cuotas sin interés</small>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="client-name">Nombre y Apellido:</label>
+            <input type="text" id="client-name" name="name" class="form-input" placeholder="Ej. Juan Pérez" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="client-email">Correo Electrónico:</label>
+            <input type="email" id="client-email" name="email" class="form-input" placeholder="juan@ejemplo.com"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="client-address">Dirección de Entrega y Código Postal:</label>
+            <input type="text" id="client-address" name="address" class="form-input"
+              placeholder="Calle, Número, Ciudad, CP" required>
+          </div>
+
+          <!-- Checkout Price Summary -->
+          <div
+            style="background: var(--bg-dark); padding: 18px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); margin-bottom: 22px;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.88rem; margin-bottom: 6px;">
+              <span>Subtotal:</span>
+              <span id="checkout-subtotal">$0</span>
+            </div>
+            <div id="checkout-discount-row"
+              style="display: none; justify-content: space-between; font-size: 0.88rem; color: var(--accent-green); margin-bottom: 6px;">
+              <span>Descuento Transferencia (-15%):</span>
+              <span id="checkout-discount">-$0</span>
+            </div>
+            <div
+              style="display: flex; justify-content: space-between; font-family: var(--font-display); font-size: 1.25rem; font-weight: 800; color: #fff; border-top: 1px dashed var(--border-subtle); padding-top: 10px; margin-top: 6px;">
+              <span>TOTAL FINAL:</span>
+              <span id="checkout-total" style="color: var(--accent-primary);">$0</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <span>CONFIRMAR Y GENERAR ORDEN</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Order Confirmation Modal -->
+  <dialog class="modal-dialog" id="order-confirmation-dialog" aria-labelledby="confirm-title">
+    <div class="modal-card" style="max-width: 580px; text-align: center;">
+      <div class="modal-header">
+        <h3 id="confirm-title" style="color: var(--accent-green);">🎉 ¡ORDEN GENERADA CON ÉXITO!</h3>
+        <button type="button" class="modal-close-btn" aria-label="Cerrar">&times;</button>
+      </div>
+      <div style="padding: 30px;">
+        <span style="font-size: 3.5rem; display: block; margin-bottom: 12px;">⚡</span>
+        <h4 style="font-size: 1.3rem; margin-bottom: 8px;">CÓDIGO DE SEGUIMIENTO: <span id="confirm-order-id"
+            style="color: var(--accent-primary);">GFZ-2026-0000</span></h4>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 18px;">
+          Tu pedido exclusivo de Grafyzone ha sido registrado en el sistema. Te hemos enviado un correo con las
+          instrucciones de despacho.
+        </p>
+
+        <div id="confirm-order-details" style="text-align: left;">
+          <!-- Injected dynamically -->
+        </div>
+
+        <button type="button" class="btn btn-primary modal-close-btn" style="margin-top: 24px; width: 100%;">
+          <span>ENTENDIDO, VOLVER A LA TIENDA</span>
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modular Scripts in dependency order -->
+  <script src="js/store-config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/editor.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
